@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Music-Minder",
+  "version": "1.0.0",
+  "description": "Adaptive volume control for background music",
+  "permissions": ["tabs", "activeTab", "storage"],
+  "browser_action": {
+    "default_popup": "dist/popup/popup.html",
+    "default_title": "Music-Minder"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["dist/content/content.js"]
+  }],
+  "background": {
+    "scripts": ["dist/background/background.js"],
+    "persistent": false
+  }
+}

@@ -1,0 +1,12 @@
+/* Basic styling for Music-Minder popup */
+body {
+  width: 300px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.music-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
