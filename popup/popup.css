@@ -1,0 +1,18 @@
+/* popup.css */
+.mode-btn.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.mode-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}

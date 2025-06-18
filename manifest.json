@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Music-Minder",
+  "version": "1.0.0",
+  "description": "Adaptive volume control for background music",
+  "permissions": ["tabs", "activeTab", "storage", "<all_urls>"],
+ 
+  "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    
+  }],
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Music-Minder"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "music-minder@your-domain.com"
+    }
+  }
+}
