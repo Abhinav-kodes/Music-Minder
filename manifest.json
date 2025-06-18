@@ -4,11 +4,9 @@
   "version": "1.0.0",
   "description": "Adaptive volume control for background music",
   "permissions": ["tabs", "activeTab", "storage", "<all_urls>"],
- 
   "content_scripts": [{
-      "matches": ["<all_urls>"],
-      "js": ["scripts/content.js"]
-    
+    "matches": ["<all_urls>"],
+    "js": ["scripts/content.js"]
   }],
   "background": {
     "scripts": ["scripts/background.js"],
@@ -17,6 +15,12 @@
   "browser_action": {
     "default_popup": "popup/popup.html",
     "default_title": "Music-Minder"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
   },
   "browser_specific_settings": {
     "gecko": {
